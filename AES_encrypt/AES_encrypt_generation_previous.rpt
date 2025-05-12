@@ -1,0 +1,236 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\ITI\FPGA\AES\AES_encrypt.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=D:\ITI\FPGA\AES\AES_encrypt\simulation --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading AES/AES_encrypt.qsys
+Progress: Reading input file
+Progress: Adding AES_AXI_0 [AES_AXI 1.0]
+Progress: Parameterizing module AES_AXI_0
+Progress: Adding AES_DECR_0 [AES_DECR 1.0]
+Progress: Parameterizing module AES_DECR_0
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_m_0 [intel_niosv_m 26.0.0]
+Progress: Parameterizing module intel_niosv_m_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 24.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: AES_encrypt.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: AES_encrypt: Generating "AES_encrypt" for SIM_VERILOG
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_AXI_0_altera_axi4lite_slave:AES_AXI_0_altera_axi4lite_slave_arprot (arprot)"
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_AXI_0_altera_axi4lite_slave:AES_AXI_0_altera_axi4lite_slave_awprot (awprot)"
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_DECR_0_altera_axi4lite_slave:AES_DECR_0_altera_axi4lite_slave_arprot (arprot)"
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_DECR_0_altera_axi4lite_slave:AES_DECR_0_altera_axi4lite_slave_awprot (awprot)"
+Info: AES_AXI_0: "AES_encrypt" instantiated AES_AXI "AES_AXI_0"
+Info: AES_DECR_0: "AES_encrypt" instantiated AES_DECR "AES_DECR_0"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/AddRoundKey.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/KeyExpansion.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/MixColumns.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/ShiftRows.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/SubByte.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/invSbox.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/invSubByte.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/sbox.v
+Info: intel_niosv_m_0: "AES_encrypt" instantiated intel_niosv_m "intel_niosv_m_0"
+Info: jtag_uart_0: "AES_encrypt" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'AES_encrypt_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/24.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/24.1std/quartus/bin64/perl/lib -I C:/altera_lite/24.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/24.1std/quartus/sopc_builder/bin -I C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=AES_encrypt_onchip_memory2_0 --dir=C:/Users/Khalifa/AppData/Local/Temp/alt0219_8616831953053111960.dir/0074_onchip_memory2_0_gen/ --quartus_dir=C:/altera_lite/24.1std/quartus --verilog --config=C:/Users/Khalifa/AppData/Local/Temp/alt0219_8616831953053111960.dir/0074_onchip_memory2_0_gen//AES_encrypt_onchip_memory2_0_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/Khalifa/AppData/Local/Temp/alt0219_8616831953053111960.dir/0074_onchip_memory2_0_gen/}]
+Info: onchip_memory2_0: Done RTL generation for module 'AES_encrypt_onchip_memory2_0'
+Info: onchip_memory2_0: "AES_encrypt" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "AES_encrypt" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "AES_encrypt" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "AES_encrypt" instantiated altera_reset_controller "rst_controller"
+Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+Info: hart: "intel_niosv_m_0" instantiated intel_niosv_m_unit "hart"
+Info: timer_module: "intel_niosv_m_0" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "intel_niosv_m_0" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/aldec/niosv_ram.sv
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/mentor/niosv_ram.sv
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_reset_synchronizer.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_reset_controller.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_reset_controller.sdc
+Info: irq_mapper: "intel_niosv_m_0" instantiated altera_irq_mapper "irq_mapper"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: intel_niosv_m_0_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "intel_niosv_m_0_data_manager_agent"
+Info: AES_AXI_0_altera_axi4lite_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "AES_AXI_0_altera_axi4lite_slave_agent"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_merlin_address_alignment.sv
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: intel_niosv_m_0_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "intel_niosv_m_0_instruction_manager_wr_limiter"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_005: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_005"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_004"
+Info: rsp_demux_005: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_005"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: niosv_reset_controller: "hart" instantiated intel_niosv_m_unit "niosv_reset_controller"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: AES_encrypt: Done "AES_encrypt" with 39 modules, 151 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\ITI\FPGA\AES\AES_encrypt\AES_encrypt.spd --output-directory=D:/ITI/FPGA/AES/AES_encrypt/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\ITI\FPGA\AES\AES_encrypt\AES_encrypt.spd --output-directory=D:/ITI/FPGA/AES/AES_encrypt/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/ITI/FPGA/AES/AES_encrypt/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for RIVIERA simulator in D:/ITI/FPGA/AES/AES_encrypt/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/ITI/FPGA/AES/AES_encrypt/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\ITI\FPGA\AES\AES_encrypt.qsys --block-symbol-file --output-directory=D:\ITI\FPGA\AES\AES_encrypt --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading AES/AES_encrypt.qsys
+Progress: Reading input file
+Progress: Adding AES_AXI_0 [AES_AXI 1.0]
+Progress: Parameterizing module AES_AXI_0
+Progress: Adding AES_DECR_0 [AES_DECR 1.0]
+Progress: Parameterizing module AES_DECR_0
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_m_0 [intel_niosv_m 26.0.0]
+Progress: Parameterizing module intel_niosv_m_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 24.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: AES_encrypt.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\ITI\FPGA\AES\AES_encrypt.qsys --synthesis=VERILOG --output-directory=D:\ITI\FPGA\AES\AES_encrypt\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading AES/AES_encrypt.qsys
+Progress: Reading input file
+Progress: Adding AES_AXI_0 [AES_AXI 1.0]
+Progress: Parameterizing module AES_AXI_0
+Progress: Adding AES_DECR_0 [AES_DECR 1.0]
+Progress: Parameterizing module AES_DECR_0
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_m_0 [intel_niosv_m 26.0.0]
+Progress: Parameterizing module intel_niosv_m_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 24.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: AES_encrypt.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: AES_encrypt: Generating "AES_encrypt" for QUARTUS_SYNTH
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_AXI_0_altera_axi4lite_slave:AES_AXI_0_altera_axi4lite_slave_arprot (arprot)"
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_AXI_0_altera_axi4lite_slave:AES_AXI_0_altera_axi4lite_slave_awprot (awprot)"
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_DECR_0_altera_axi4lite_slave:AES_DECR_0_altera_axi4lite_slave_arprot (arprot)"
+Warning: AES_encrypt: "No matching role found for mm_interconnect_0:AES_DECR_0_altera_axi4lite_slave:AES_DECR_0_altera_axi4lite_slave_awprot (awprot)"
+Info: AES_AXI_0: "AES_encrypt" instantiated AES_AXI "AES_AXI_0"
+Info: AES_DECR_0: "AES_encrypt" instantiated AES_DECR "AES_DECR_0"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/AddRoundKey.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/KeyExpansion.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/MixColumns.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/ShiftRows.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/SubByte.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/invSbox.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/invSubByte.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/sbox.v
+Info: intel_niosv_m_0: "AES_encrypt" instantiated intel_niosv_m "intel_niosv_m_0"
+Info: jtag_uart_0: "AES_encrypt" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'AES_encrypt_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/24.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/24.1std/quartus/bin64/perl/lib -I C:/altera_lite/24.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/24.1std/quartus/sopc_builder/bin -I C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=AES_encrypt_onchip_memory2_0 --dir=C:/Users/Khalifa/AppData/Local/Temp/alt0219_8616831953053111960.dir/0109_onchip_memory2_0_gen/ --quartus_dir=C:/altera_lite/24.1std/quartus --verilog --config=C:/Users/Khalifa/AppData/Local/Temp/alt0219_8616831953053111960.dir/0109_onchip_memory2_0_gen//AES_encrypt_onchip_memory2_0_component_configuration.pl --do_build_sim=0}]
+Info: onchip_memory2_0: Done RTL generation for module 'AES_encrypt_onchip_memory2_0'
+Info: onchip_memory2_0: "AES_encrypt" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "AES_encrypt" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "AES_encrypt" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "AES_encrypt" instantiated altera_reset_controller "rst_controller"
+Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+Info: hart: "intel_niosv_m_0" instantiated intel_niosv_m_unit "hart"
+Info: timer_module: "intel_niosv_m_0" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "intel_niosv_m_0" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/niosv_ram.sv
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_reset_synchronizer.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_reset_controller.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_reset_controller.sdc
+Info: irq_mapper: "intel_niosv_m_0" instantiated altera_irq_mapper "irq_mapper"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: intel_niosv_m_0_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "intel_niosv_m_0_data_manager_agent"
+Info: AES_AXI_0_altera_axi4lite_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "AES_AXI_0_altera_axi4lite_slave_agent"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: intel_niosv_m_0_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "intel_niosv_m_0_instruction_manager_wr_limiter"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_005: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_005"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_004"
+Info: rsp_demux_005: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_005"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file D:/ITI/FPGA/AES/AES_encrypt/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: niosv_reset_controller: "hart" instantiated intel_niosv_m_unit "niosv_reset_controller"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: AES_encrypt: Done "AES_encrypt" with 39 modules, 103 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

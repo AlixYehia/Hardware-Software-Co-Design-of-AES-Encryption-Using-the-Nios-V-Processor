@@ -1,0 +1,15 @@
+٠٠:١٢:٠١ **** Incremental Build of configuration Debug for project app ****
+"C:\\altera_lite\\24.1std\\riscfree\\build_tools\\bin\\make.exe" -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/app.elf.dir/aes_app.c.obj
+[ 96%] Linking C executable app.elf
+[ 96%] Built target app.elf
+[ 97%] Reporting memory available for stack + heap in app.elf.
+[ 98%] Creating app.elf.objdump.
+[100%] Creating onchip_memory2_0.hex.
+app.elf
+ * 96.88 KB - Program size (code + initialized data).
+ * 24.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+[100%] Built target create-hex
+[100%] Built target create-objdump

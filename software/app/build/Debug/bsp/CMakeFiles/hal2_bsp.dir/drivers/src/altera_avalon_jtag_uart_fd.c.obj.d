@@ -1,0 +1,19 @@
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: \
+ D:/ITI/FPGA/AES/software/bsp/drivers/src/altera_avalon_jtag_uart_fd.c \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/alt_types.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/sys/alt_dev.h \
+ D:/ITI/FPGA/AES/software/bsp/system.h \
+ D:/ITI/FPGA/AES/software/bsp/linker.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/sys/alt_llist.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/priv/alt_dev_llist.h \
+ D:/ITI/FPGA/AES/software/bsp/drivers/inc/altera_avalon_jtag_uart.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/sys/alt_alarm.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/sys/alt_llist.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/priv/alt_alarm.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/sys/alt_warning.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/os/alt_hooks.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/os/alt_sem.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/priv/alt_no_error.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/os/alt_flag.h \
+ D:/ITI/FPGA/AES/software/bsp/drivers/inc/altera_avalon_jtag_uart_fd.h

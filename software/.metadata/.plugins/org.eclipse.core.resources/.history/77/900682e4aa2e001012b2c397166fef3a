@@ -1,0 +1,131 @@
+#include <stdint.h>
+#include <stdio.h>
+#include "D:\ITI\FPGA\AES\software\bsp\system.h"
+#include "D:\ITI\FPGA\AES\software\bsp\HAL\inc\sys\intel_fpga_api_niosv.h"
+
+
+/*#define AES_ENC_PTR       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x00))
+#define AES_DEC_PTR       (*(volatile uint32_t *)(AES_DECR_0_BASE + 0x00))
+#define AES_INPUT1       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x04))
+#define AES_INPUT2       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x08))
+#define AES_INPUT3       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x0C))
+
+#define AES_KEY0         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x10))
+#define AES_KEY1         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x14))
+#define AES_KEY2         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x18))
+#define AES_KEY3         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x1C))
+
+#define AES_OUTPUT0      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x20))
+#define AES_OUTPUT1      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x24))
+#define AES_OUTPUT2      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x28))
+#define AES_OUTPUT3      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x2C))*/
+
+int main() {
+	// base addresser for the AES [ENC, DEC] IPs
+	int *ptr_enc = (int *) (AES_AXI_0_BASE);
+	int *ptr_dec = (int *) (AES_DECR_0_BASE);
+
+	// this is the input for the ENC IP
+	int plain_text_in[4] = { 0x00112233, 0x44556677, 0x8899aabb, 0xccddeeff };
+	int key[4] = { 0x00010203, 0x04050607, 0x08090a0b, 0x0c0d0e0f };
+
+	// Assigning the data to the input of ENC
+	for (int i = 0; i < 4; i++){
+		ptr_enc[i] = plain_text_in[i];
+		ptr_enc[i + 4] = key[i];
+	}
+
+	// AES_INPUT0 = plaintext[0];
+	// AES_INPUT1 = plaintext[1];
+	// AES_INPUT2 = plaintext[2];
+	// AES_INPUT3 = plaintext[3];
+
+	// AES_KEY0 = key[0];
+	// AES_KEY1 = key[1];
+	// AES_KEY2 = key[2];
+	// AES_KEY3 = key[3];
+
+	// taking the output from ENC module
+	int ciphertext[4] = {0};
+	for (int i = 0; i < 4; i++){
+		ciphertext[i] = ptr_enc[i+8];
+	}
+
+	// Assigning the data to the input of DEC
+	for (int i = 0; i < 4; i++){
+		ptr_dec[i] = ciphertext[i];
+		ptr_dec[i + 4] = key[i];
+	}
+
+	// taking the output from DEC module
+	int plain_text_out [4] = {0};
+	for (int i = 0; i < 4; i++){
+		plain_text_out[i] = ptr_dec[i+8];
+	}
+
+	// for (int i = 0; i < 100; i++) {
+	// 	asm("NOP");
+	// }
+
+	// ciphertext[0] = AES_OUTPUT0;
+	// ciphertext[1] = AES_OUTPUT1;
+	// ciphertext[2] = AES_OUTPUT2;
+	// ciphertext[3] = AES_OUTPUT3;
+
+	printf("############################################\n");
+	printf("## Encrypting 128-bit plaintext using AES ##\n");
+	printf("############################################\n\n");
+
+	printf("%-20s", "Plaintext:");
+    for (int i = 0; i < 4; i++) {
+        printf("%08x", ptr_enc[i]);
+    }
+	printf("\n---------------------------------------------\n");
+
+	printf("%-20s", "Key:");
+    for (int i = 4; i < 8; i++) {
+        printf("%08x", ptr_enc[i]);
+    }
+	printf("\n---------------------------------------------\n");
+
+	printf("%-20s", "Actual ciphertext:");
+	for (int i = 0; i < 4; i++) {
+		printf("%08x", ciphertext[i]);
+	}
+	printf("\n---------------------------------------------\n");
+
+
+	printf("%-20s", "Expected ciphertext:");
+	printf("69c4e0d86a7b0430d8cdb78070b4c55a");
+	printf("\n---------------------------------------------\n");
+	printf("AES encryption completed.\n");
+
+	printf("\n**********************************************\n\n");
+
+
+
+	printf("############################################\n");
+	printf("## Decrypting 128-bit ciphertext using AES ##\n");
+	printf("############################################\n\n");
+
+	printf("%-20s", "Ciphertext:");
+    for (int i = 0; i < 4; i++) {
+        printf("%08x", ptr_dec[i]);
+    }
+	printf("\n---------------------------------------------\n");
+
+	printf("%-20s", "Key:");
+    for (int i = 4; i < 8; i++) {
+        printf("%08x", ptr_dec[i]);
+    }
+	printf("\n---------------------------------------------\n");
+
+	printf("%-20s", "Actual plaintext:");
+	for (int i = 0; i < 4; i++) {
+		printf("%08x", plain_text_out[i]);
+	}
+	printf("\n---------------------------------------------\n");
+	printf("AES encryption completed.\n");
+
+	return 0;
+}

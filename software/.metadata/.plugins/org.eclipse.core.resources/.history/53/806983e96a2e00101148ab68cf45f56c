@@ -1,0 +1,54 @@
+#include <stdint.h>
+#include <stdio.h>
+#include "D:\ITI\FPGA\AES\software\bsp\system.h"
+#include "D:\ITI\FPGA\AES\software\bsp\HAL\inc\sys\intel_fpga_api_niosv.h"
+
+
+int main() {
+
+	uint32_t * plain_ptr = (uint32_t *)(AES_AXI_0_BASE);
+
+    uint32_t key[4] = {
+        0x00010203,
+        0x04050607,
+        0x08090a0b,
+        0x0c0d0e0f
+    };
+    
+    uint32_t plaintext[4] = {
+        0x00112233,
+        0x44556677,
+        0x8899aabb,
+        0xccddeeff
+    };
+
+    uint32_t ciphertext[4];
+
+    printf("Encrypting 128-bit plaintext using AES...\n");
+
+    aes_encrypt(plaintext, key, ciphertext);
+
+    printf("Plaintext:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("%08lX ", plain_ptr[i]);
+    }
+    printf("\n");
+
+    printf("Key:\n");
+    for (int i = 4; i < 8; i++) {
+        printf("%08lX ", plain_ptr[i]);
+    }
+    printf("\n");
+
+    printf("Actual ciphertext:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("%08lX ", ciphertext[i]);
+    }
+    printf("\n");
+
+    printf("Expected ciphertext:\n");
+    printf("69c4e0d86a7b0430d8cdb78070b4c55a\n");
+    printf("AES encryption completed.\n");
+
+    return 0;
+}

@@ -1,0 +1,20 @@
+bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj: \
+ D:/ITI/FPGA/AES/software/bsp/HAL/src/alt_busy_sleep.c \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/limits.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/syslimits.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/limits.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ C:/altera_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/syslimits.h \
+ D:/ITI/FPGA/AES/software/bsp/system.h \
+ D:/ITI/FPGA/AES/software/bsp/linker.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/alt_types.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/sys/alt_timestamp.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/intel_niosv.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/alt_types.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/io.h \
+ D:/ITI/FPGA/AES/software/bsp/HAL/inc/priv/alt_busy_sleep.h

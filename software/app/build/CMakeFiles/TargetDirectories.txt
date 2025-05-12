@@ -1,0 +1,9 @@
+D:/ITI/FPGA/AES/software/app/build/CMakeFiles/app.elf.dir
+D:/ITI/FPGA/AES/software/app/build/CMakeFiles/create-objdump.dir
+D:/ITI/FPGA/AES/software/app/build/CMakeFiles/niosv-stack-report.dir
+D:/ITI/FPGA/AES/software/app/build/CMakeFiles/create-hex.dir
+D:/ITI/FPGA/AES/software/app/build/CMakeFiles/edit_cache.dir
+D:/ITI/FPGA/AES/software/app/build/CMakeFiles/rebuild_cache.dir
+D:/ITI/FPGA/AES/software/app/build/bsp/CMakeFiles/hal2_bsp.dir
+D:/ITI/FPGA/AES/software/app/build/bsp/CMakeFiles/edit_cache.dir
+D:/ITI/FPGA/AES/software/app/build/bsp/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,151 @@
+Info: Starting: Create testbench Platform Designer system
+Info: D:/ITI/FPGA/AES/AES_encrypt/testbench/AES_encrypt.ipx
+Info: qsys-generate D:\ITI\FPGA\AES\AES_encrypt.qsys --testbench=STANDARD --output-directory=D:\ITI\FPGA\AES --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading AES/AES_encrypt.qsys
+Progress: Reading input file
+Progress: Adding AES_AXI_0 [AES_AXI 1.0]
+Progress: Parameterizing module AES_AXI_0
+Progress: Adding clk_0 [clock_source 24.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_m_0 [intel_niosv_m 26.0.0]
+Progress: Parameterizing module intel_niosv_m_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 24.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 24.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: AES_encrypt.AES_AXI: The SIM_VERILOG fileset must specify the top-level module name.
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: AES_encrypt.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: AES_encrypt.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/altera_lite/24.1std/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\altera_lite\24.1std\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\altera_lite\24.1std\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\altera_lite\24.1std\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\altera_lite\24.1std\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.00 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.00 seconds
+Info: D:/ITI/FPGA/AES/AES_encrypt/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index D:\ITI\FPGA\AES\AES_encrypt\testbench\AES_encrypt.ipx
+Progress: Loading AES/AES_AXI_hw.tcl
+Progress: Loading AES/AES_encrypt.qsys
+Info: D:/ITI/FPGA/AES/* matched 19 files in 0.03 seconds
+Info: D:/ITI/FPGA/AES/ip/**/* matched 0 files in 0.00 seconds
+Info: D:/ITI/FPGA/AES/*/* matched 470 files in 0.01 seconds
+Info: D:\ITI\FPGA\AES\AES_encrypt\testbench\AES_encrypt.ipx described 0 plugins, 3 paths, in 0.04 seconds
+Info: D:/ITI/FPGA/AES/AES_encrypt/testbench/* matched 4 files in 0.04 seconds
+Info: D:/ITI/FPGA/AES/AES_encrypt/testbench/*/* matched 0 files in 0.00 seconds
+Info: C:/Users/Khalifa/.altera.quartus/ip/24.1/**/* matched 0 files in 0.00 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index C:\altera_lite\24.1std\ip\altera\altera_components.ipx
+Info: C:\altera_lite\24.1std\ip\altera\altera_components.ipx described 1958 plugins, 0 paths, in 0.14 seconds
+Info: C:/altera_lite/24.1std/ip/**/* matched 108 files in 0.14 seconds
+Info: C:/altera_lite/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\altera_lite\24.1std\quartus\sopc_builder\builtin.ipx
+Info: C:\altera_lite\24.1std\quartus\sopc_builder\builtin.ipx described 87 plugins, 0 paths, in 0.01 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/**/* matched 8 files in 0.01 seconds
+Info: C:/altera_lite/24.1std/quartus/common/librarian/factories/**/* matched 0 files in 0.00 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: C:\altera_lite\24.1std\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0.19 seconds
+Info: C:/altera_lite/24.1std/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.19 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/altera_lite/24.1std/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: AES_encrypt
+Info: TB_Gen: System design is: AES_encrypt
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: send_message Info TB_Gen: Creating testbench system : AES_encrypt_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : AES_encrypt_tb with all standard BFMs
+Info: create_system AES_encrypt_tb
+Info: add_instance AES_encrypt_inst AES_encrypt 
+Info: set_use_testbench_naming_pattern true AES_encrypt
+Info: get_instance_interfaces AES_encrypt_inst
+Info: get_instance_interface_property AES_encrypt_inst clk CLASS_NAME
+Info: get_instance_interface_property AES_encrypt_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property AES_encrypt_inst clk CLASS_NAME
+Info: add_instance AES_encrypt_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property AES_encrypt_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AES_encrypt_inst clk clockRate
+Info: set_instance_parameter_value AES_encrypt_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value AES_encrypt_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property AES_encrypt_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property AES_encrypt_inst clk CLASS_NAME
+Info: get_instance_interfaces AES_encrypt_inst_clk_bfm
+Info: get_instance_interface_property AES_encrypt_inst_clk_bfm clk CLASS_NAME
+Info: add_connection AES_encrypt_inst_clk_bfm.clk AES_encrypt_inst.clk
+Info: send_message Info TB_Gen: Saving testbench system: AES_encrypt_tb.qsys
+Info: TB_Gen: Saving testbench system: AES_encrypt_tb.qsys
+Info: save_system AES_encrypt_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: D:/ITI/FPGA/AES/AES_encrypt/testbench/AES_encrypt_tb.qsys
+Info: Done
+Info: qsys-generate D:\ITI\FPGA\AES\AES_encrypt.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=D:\ITI\FPGA\AES\AES_encrypt\testbench\AES_encrypt_tb\simulation --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading testbench/AES_encrypt_tb.qsys
+Progress: Reading input file
+Progress: Adding AES_encrypt_inst [AES_encrypt 1.0]
+Progress: Parameterizing module AES_encrypt_inst
+Progress: Adding AES_encrypt_inst_clk_bfm [altera_avalon_clock_source 24.1]
+Progress: Parameterizing module AES_encrypt_inst_clk_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: AES_encrypt_tb.AES_encrypt_inst.AES_AXI: The SIM_VERILOG fileset must specify the top-level module name.
+Warning: AES_encrypt_tb.AES_encrypt_inst.intel_niosv_m_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: AES_encrypt_tb.AES_encrypt_inst.intel_niosv_m_0: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: AES_encrypt_tb.AES_encrypt_inst.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: AES_encrypt_tb.AES_encrypt_inst.intel_niosv_m_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Info: AES_encrypt_tb.AES_encrypt_inst.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: AES_encrypt_tb.AES_encrypt_inst_clk_bfm: Elaborate: altera_clock_source
+Info: AES_encrypt_tb.AES_encrypt_inst_clk_bfm:            $Revision: #1 $
+Info: AES_encrypt_tb.AES_encrypt_inst_clk_bfm:            $Date: 2023/12/11 $
+Info: AES_encrypt_tb: Generating "AES_encrypt_tb" for SIM_VERILOG
+Warning: AES_encrypt_inst: "No matching role found for mm_interconnect_0:AES_AXI_0_AES_axi4lite_slave_1:AES_AXI_0_AES_axi4lite_slave_1_arprot (arprot)"
+Warning: AES_encrypt_inst: "No matching role found for mm_interconnect_0:AES_AXI_0_AES_axi4lite_slave_1:AES_AXI_0_AES_axi4lite_slave_1_awprot (awprot)"
+Info: AES_encrypt_inst: "AES_encrypt_tb" instantiated AES_encrypt "AES_encrypt_inst"
+Info: AES_encrypt_inst_clk_bfm: "AES_encrypt_tb" instantiated altera_avalon_clock_source "AES_encrypt_inst_clk_bfm"
+Info: AES_AXI_0: "AES_encrypt_inst" instantiated AES_AXI "AES_AXI_0"
+Info: intel_niosv_m_0: "AES_encrypt_inst" instantiated intel_niosv_m "intel_niosv_m_0"
+Info: jtag_uart_0: "AES_encrypt_inst" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'AES_encrypt_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/altera_lite/24.1std/quartus/bin64/perl/bin/perl.exe -I C:/altera_lite/24.1std/quartus/bin64/perl/lib -I C:/altera_lite/24.1std/quartus/sopc_builder/bin/europa -I C:/altera_lite/24.1std/quartus/sopc_builder/bin -I C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera_lite/24.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=AES_encrypt_onchip_memory2_0 --dir=C:/Users/Khalifa/AppData/Local/Temp/alt0205_4781411799177033997.dir/0046_onchip_memory2_0_gen/ --quartus_dir=C:/altera_lite/24.1std/quartus --verilog --config=C:/Users/Khalifa/AppData/Local/Temp/alt0205_4781411799177033997.dir/0046_onchip_memory2_0_gen//AES_encrypt_onchip_memory2_0_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/Khalifa/AppData/Local/Temp/alt0205_4781411799177033997.dir/0046_onchip_memory2_0_gen/}]
+Info: onchip_memory2_0: Done RTL generation for module 'AES_encrypt_onchip_memory2_0'
+Info: onchip_memory2_0: "AES_encrypt_inst" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "AES_encrypt_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "AES_encrypt_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "AES_encrypt_inst" instantiated altera_reset_controller "rst_controller"
+Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+Info: hart: "intel_niosv_m_0" instantiated intel_niosv_m_unit "hart"
+Error: add_fileset_file: No such file C:/altera_lite/24.1std/ip/altera/soft_processor/intel_niosv_m/cadence/niosv_timer_msip.sv     while executing "add_fileset_file $current_sim/niosv_timer_msip.sv SYSTEM_VERILOG PATH ${NIOS_VARIANT_PATH}/$current_sim/niosv_timer_msip.sv $attr"     (procedure "fileset_callback_impl" line 31)     invoked from within "fileset_callback_impl sim"     (procedure "sim_callback" line 2)     invoked from within "sim_callback niosv_timer_msip"
+Info: timer_module: "intel_niosv_m_0" instantiated intel_niosv_timer_msip "timer_module"
+Error: Generation stopped, 62 or more modules remaining
+Info: AES_encrypt_tb: Done "AES_encrypt_tb" with 39 modules, 90 files
+Error: qsys-generate failed with exit code 1: 2 Errors, 7 Warnings
+Error: There were errors creating the testbench system.
+Info: Finished: Create testbench Platform Designer system

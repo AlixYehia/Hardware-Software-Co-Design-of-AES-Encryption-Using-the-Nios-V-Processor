@@ -1,0 +1,83 @@
+#include <stdint.h>
+#include <stdio.h>
+#include "D:\ITI\FPGA\AES\software\bsp\system.h"
+#include "D:\ITI\FPGA\AES\software\bsp\HAL\inc\sys\intel_fpga_api_niosv.h"
+
+#define AES_INPUT0       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x00))
+#define AES_INPUT1       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x04))
+#define AES_INPUT2       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x08))
+#define AES_INPUT3       (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x0C))
+
+#define AES_KEY0         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x10))
+#define AES_KEY1         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x14))
+#define AES_KEY2         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x18))
+#define AES_KEY3         (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x1C))
+
+#define AES_OUTPUT0      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x20))
+#define AES_OUTPUT1      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x24))
+#define AES_OUTPUT2      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x28))
+#define AES_OUTPUT3      (*(volatile uint32_t *)(AES_AXI_0_BASE + 0x2C))
+
+int main() {
+
+	 int plaintext[4] = {
+			0x00112233,
+			0x44556677,
+			0x8899aabb,
+			0xccddeeff
+	 };
+
+	 int key[4] = {
+			 0x00010203,
+			 0x04050607,
+			 0x08090a0b,
+			 0x0c0d0e0f
+		 };
+
+	AES_INPUT0 = plaintext[0];
+	AES_INPUT1 = plaintext[1];
+	AES_INPUT2 = plaintext[2];
+	AES_INPUT3 = plaintext[3];
+
+	AES_KEY0 = key[0];
+	AES_KEY1 = key[1];
+	AES_KEY2 = key[2];
+	AES_KEY3 = key[3];
+
+    int ciphertext[4];
+
+    for (int i=0 ; i<100 ; i++) {
+    	asm("NOP");
+    }
+
+    ciphertext[2] = AES_OUTPUT2;
+    ciphertext[3] = AES_OUTPUT3;
+    ciphertext[1] = AES_OUTPUT1;
+    ciphertext[0] = AES_OUTPUT0;
+    
+    printf("Encrypting 128-bit plaintext using AES...\n");
+
+    printf("Plaintext:\n");
+//    for (int i = 0; i < 4; i++) {
+//        printf("%08X ", plain_ptr[i]);
+//    }
+    printf("\n");
+
+    printf("Key:\n");
+//    for (int i = 4; i < 8; i++) {
+//        printf("%08X ", plain_ptr[i]);
+//    }
+//    printf("\n");
+
+    printf("Actual ciphertext:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("%08X ", ciphertext[i]);
+    }
+    printf("\n");
+
+    printf("Expected ciphertext:\n");
+    printf("69c4e0d86a7b0430d8cdb78070b4c55a\n");
+    printf("AES encryption completed.\n");
+
+    return 0;
+}
