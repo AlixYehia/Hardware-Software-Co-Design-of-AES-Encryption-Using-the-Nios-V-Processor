@@ -6,8 +6,12 @@
 ## System Configuration in Quartus
 ![System Configuration in Quartus](assets/System%20Configuration%20in%20Quartus.png)
 
+## Simulation Results of AES Encrypt Wrapper
+![Simulation Results of AES Decrypt Wrapper](assets/Simulation%20Results%20of%20AES%20Encrypt%20Wrapper.png)
+
 ## Simulation Results of AES Decrypt Wrapper
 ![Simulation Results of AES Decrypt Wrapper](assets/Simulation%20Results%20of%20AES%20Decrypt%20Wrapper.png)
+
 
 ## 👥 Contributors
 
