@@ -178,62 +178,55 @@ WSTRB = 4'b1111;
 WVALID = 0;
 
 // ---------------------- READ ------------------------
-    ARADDR = 'h20;
-    ARVALID = 1;
-    @(ARREADY)
-    @(posedge ACLK)
-    ARVALID = 0;
+ARADDR = 'h20;
+ARVALID = 1;
+RREADY  = 1;
+@(ARREADY)
+@(posedge ACLK)
+ARVALID = 0;
 
-    RREADY = 1;
-    @(RVALID) 
-    RREADY = 0;
-  //------------------------  
-    ARADDR = 'h24;
-    ARVALID = 1;
-    @(ARREADY)
-    @(posedge ACLK)
-    
-    ARVALID = 1;
-    @(posedge ACLK)
-    
-    ARVALID = 0;
+@(RVALID) 
+@(posedge ACLK) 
+RREADY = 0;
+@(posedge ACLK)
+//------------------------  
+ARADDR = 'h24;
+ARVALID = 1;
+RREADY  = 1;
+@(ARREADY)
+@(posedge ACLK)
+ARVALID = 0;
 
-    RREADY = 1;
-    @(RVALID) 
-    RREADY = 0;
+@(RVALID)
+@(posedge ACLK)  
+RREADY = 0;
+@(posedge ACLK)
+//------------------------  
+ARADDR = 'h28;
+ARVALID = 1;
+RREADY  = 1;
+@(ARREADY)
+@(posedge ACLK)
+ARVALID = 0;
 
-  //------------------------  
-    ARADDR = 'h28;
-    ARVALID = 1;
-    @(ARREADY)
-    @(posedge ACLK)
-    
-    ARVALID = 1;
-    @(posedge ACLK)
-    
-    ARVALID = 0;
+@(RVALID)     
+@(posedge ACLK) 
+RREADY = 0;
+@(posedge ACLK)
+//------------------------  
+ARADDR = 'h2c;
+ARVALID = 1;
+RREADY  = 1;
+@(ARREADY)
+@(posedge ACLK)
+ARVALID = 0;
 
-    RREADY = 1;
-    @(RVALID) 
-    RREADY = 0;
+@(RVALID)
+@(posedge ACLK) 
+RREADY = 0;
+@(posedge ACLK)
+//------------------------  
 
-  //------------------------  
-    ARADDR = 'h2c;
-    ARVALID = 1;
-    @(ARREADY)
-    @(posedge ACLK)
-    
-    ARVALID = 1;
-    @(posedge ACLK)
-    
-    ARVALID = 0;
-
-    RREADY = 1;
-    @(RVALID) 
-    RREADY = 0;
-
-  //------------------------  
-    
 
     #(50*clk_period);
       $stop;
