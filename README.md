@@ -1,5 +1,5 @@
 # Hardware-Software-Co-Design-of-AES-Encryption-Using-the-Nios-V-Processor
-## For information about AES (Advanced Encryption Standard), this repo will be useful: https://github.com/AbdurrahmanKhalifa/AES--Verilog
+## For information about the used RTL of AES (Advanced Encryption Standard), this repo will be useful: https://github.com/AbdurrahmanKhalifa/AES--Verilog
 
 ## System Block Diagram
 ![System Block Diagram](assets/System%20Block%20Diagram.png)
