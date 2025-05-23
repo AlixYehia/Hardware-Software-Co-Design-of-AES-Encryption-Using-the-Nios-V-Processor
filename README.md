@@ -13,13 +13,13 @@
 ## Simulation Results of AES Decrypt Wrapper
 ![Simulation Results of AES Decrypt Wrapper](assets/Simulation%20Results%20of%20AES%20Decrypt%20Wrapper.png)
 
-## The whole system simulation result (using QuistaSim)
+## The whole system simulation result (using QuestaSim)
 ![](assets/Simulation%20Result%20of%20the%20whole%20system.png)
-
-## Video: [assets/AES.mp4](assets/AES.mp4)
 
 ## The Juart terminal output
 ![](assets/Juart%20terminal%20output.png)
+
+## Video: [assets/AES.mp4](assets/AES.mp4)
 
 ## 👥 Contributors
 
