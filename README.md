@@ -20,7 +20,7 @@
 ![](assets/Juart%20terminal%20output.png)
 
 ## Video: [assets/AES.mp4](assets/AES.mp4)
-[![Hardware/Software Co-Design AES](https://drive.google.com/file/d/13IswqQ-vX5i_grIf1gSUB4xH9-h8GHOQ/view?usp=drive_link)
+[![Hardware/Software Co-Design AES(assets/video_thumbnail.png)](https://drive.google.com/file/d/13IswqQ-vX5i_grIf1gSUB4xH9-h8GHOQ/view?usp=drive_link)
 
 ## 👥 Contributors
 
